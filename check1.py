@@ -17,7 +17,7 @@ class User:
     def name(self, new_name):
         if not new_name:
             self.name = 'Безымянный'
-            print_log.warn("Имя не может быть пустым")
+            print_log.warn("Пустое имя. Замена имени на 'Безымянный")
             user_log.warn("Пустое имя. Замена имени на 'Безымянный'")
         else:
             self._name = new_name
